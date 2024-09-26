@@ -5,6 +5,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container-fluid, .row {
@@ -45,10 +46,16 @@ header {
 }
 
 .block_1 nav ul li {
-    font-size: 13px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 16px;
     letter-spacing: 1px;
+    color: rgb(32, 32, 32);
+    padding-bottom: 10px;
+}
+
+.block_1 nav ul li.active {
+    border-bottom: 1px solid rgb(0,129,57);
 }
 
 .block_1 nav .info_block {
@@ -76,6 +83,7 @@ header {
     width: 613px;
     line-height: 61px;
     margin-bottom: 40px;
+    color: black;
 }
 
 .block_1 .info h3 {
@@ -85,15 +93,24 @@ header {
     width: 477px;
     line-height: 34px;
     margin-left: 20px;
+    color: rgb(100, 100, 100);
 }
 
-.block_1 .info .rectangle {
+.rectangle {
     width: 26px;
     height: 1px;
     background-color: #8F8F8F;
 }
 
-.block_1 .info a {
+a.button {
+    color: #6A5300;
+}
+
+a.button:checked {
+    color: #6A5300;
+}
+
+.button {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 21px;
@@ -106,22 +123,485 @@ header {
     background: linear-gradient(180deg, rgba(255,243,131,1) 0%, rgba(255,199,0,1) 100%);
     padding: 25px 80px;
     text-decoration: none;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     box-shadow: 0 5px 0 rgb(200, 156, 0);
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
 }
 
-.block_1 .info a .circle {
-    margin: 0 auto;
-    width: 161px;
-    height: 10px;
-    background-color: white;
-    opacity: 0.3;
+.button::before {
+    content: "";
     position: absolute;
-    border-radius: 0 0 90% 90%;
-    box-shadow: 0 7px 11px 10px rgb(255, 255, 255);
-    transform: translate(0px, -35px);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+
+.button::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 55px;
+    background-color: rgba(255,255,255,0.45);
+    backdrop-filter: blur(1px);
+    z-index: 30;
+    transform: translate(0px, -45px);
+    box-shadow: 0 0 60px 0 white;
+    border-radius: 50%;
+}
+
+.button:hover {
+    background: linear-gradient(180deg, rgb(255,199,0) 0%, rgba(255,199,0,1) 100%);
+    z-index: 20;
+}
+
+.button:hover::after {
+    background-color: rgba(255,255,255,0.42);
+    box-shadow: 0 0 50px 0 white;
+}
+
+.button:active {
+    background: linear-gradient(180deg, rgb(255,199,0) 0%, rgba(255,243,131,1) 100%);
+}
+
+.button:active::after {
+    transform: translate(0px, 45px);
+}
+
+.button:active::before {
+    box-shadow: 0 0 0 0 white;
+}
+
+.block_4 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block_4 .background {
+    width: 100%;
+}
+
+.block_4 .ground {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.block_4 .cont {
+    position: absolute;
+}
+
+.block_4 .cont .title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.block_4 .cont .title h2,
+.block_4 .cont .title h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.block_4 .cont .title h2 {
+    font-family: "Philosopher", system-ui;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: rgb(54, 52, 52);
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 25px;
+}
+
+.block_4 .cont .title h3 {
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: rgb(54, 52, 52);
+    text-align: center;
+}
+
+.block_4 .cont .cards .card_block {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.block_4 .cont .cards .card_block .card {
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+}
+
+.block_4 .cont .cards .card_block .card .img_block {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translate(0px, -25px);
+}
+
+.block_4 .cont .cards .card_block .card .img_block img {
+    width: 84%;
+}
+
+.block_4 .cont .cards .card_block .card.first {
+    margin-bottom: 55px;
+    height: 400px;
+}
+
+.block_4 .cont .cards .card_block .card.second {
+    margin-bottom: 55px;
+    height: 475px;
+}
+
+
+.block_4 .cont .cards .card_block .card>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: rgb(54, 52, 52);
+    margin-top: 45px;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.block_4 .cont .cards .card_block .card>.rectangle {
+    margin: 25px auto;
+}
+
+.block_4 .cont .cards .card_block .card>h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: rgb(126, 126, 126);
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.block_4 .button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_6 .title {
+    margin-bottom: 55px;
+}
+
+.block_6 .title h2{
+    text-align: center;
+    margin: 0;
+}
+
+.block_6 .title h2 {
+    font-family: "Philosopher", system-ui;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: rgb(54, 52, 52);
+    text-align: center;
+    height: fit-content;
+}
+
+.block_6 .slider {
+    display: flex;
+    position: relative;
+}
+
+.block_6 .slider .slide {
+    flex: 1 0 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.block_6 .slider .slide:first-child {
+    display: flex;
+    justify-content: start;
+    opacity: 50%;
+    transform: translate(0px, -40px);
+}
+
+.block_6 .slider .slide:last-child {
+    display: flex;
+    justify-content: end;
+    opacity: 50%;
+    transform: translate(0px, -40px);
+}
+
+.block_6 .slider .slide .card {
+    width: 96%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+}
+
+.block_6 .slider .slide .card .img_block {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translate(0px, -25px);
+}
+
+.block_6 .slider .slide .card .img_block img {
+    width: 100%;
+}
+
+.block_6 .slider .slide .card>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: rgb(54, 52, 52);
+    margin-top: 45px;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+.block_6 .slider .slide .card>.rectangle {
+    margin: 25px auto;
+}
+
+.block_6 .slider .slide .card>h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: rgb(126, 126, 126);
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.block_6 .buttons {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_6 .pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.block_6 .pagination .item {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(225,225,225);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} 
+
+.block_6 .pagination .item.active {
+    background-color: rgb(255, 199, 0);
+}
+
+.block_6 .buttons .left,
+.block_6 .buttons .right {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    color: #6A5300;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(255,243,131,1) 0%, rgba(255,199,0,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 0 rgb(200, 156, 0);
+}
+
+.block_6 .buttons .left::after,
+.block_6 .buttons .right::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 40%;
+    position: absolute;
+    transform: translate(0px, -40px);
+    box-shadow: 0 7px 11px 10px rgb(255, 255, 255);
+}
+
+.block_6 .buttons .left:hover::after,
+.block_6 .buttons .right:hover::after {
+    display: none;
+}
+
+.block_7 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.block_7 .background {
+    width: 100%;
+}
+
+.block_7 .ground {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.block_7 .bush {
+    position: absolute;
+    bottom: -27px;
+    right: 233px;
+    z-index: 4;
+}
+
+.block_7 .cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.block_7 .cont .form {
+    position: absolute;
+    width: 37%;
+    right: 60px;
+    top: 140px;
+    background-color: white;
+    padding: 60px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0px 16px 51px 0px rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+}
+
+.block_7 .cont .form h2 {
+    font-family: "Philosopher", system-ui;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    color: rgb(54, 52, 52);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.block_7 .cont .form h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgb(126, 126, 126);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.block_7 .cont .form form {
+    width: 100%;
+}
+
+.block_7 .cont .form form input {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(143,143,143);
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgb(165,165,165);
+}
+
+.block_7 .cont .form form .input:focus {
+    color: rgb(54, 52, 52);
+    outline: rgb(143,143,143);
+}
+
+.block_7 .cont .form form .button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.block_7 .cont .form form .check {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.block_7 .cont .form form .check label .checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+
+.block_7 .cont .form form .check label .checkbox {
+    display: none; 
+}
+
+.block_7 .cont .form form .check label .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 2px solid rgb(255,92,0);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.block_7 .cont .form form .check label .checkbox:checked + .custom-checkbox {
+    border-color: rgb(255, 199, 0);
+}
+
+.block_7 .cont .form form .check label .checkmark {
+    display: none; 
+}
+
+.block_7 .cont .form form .check label .checkbox:checked + .custom-checkbox .checkmark {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
