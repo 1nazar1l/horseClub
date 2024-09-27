@@ -112,6 +112,16 @@ header .seagulls {
     right: 239px;
 }
 
+header .aside_block {
+    position: absolute;
+    width: 0%;
+    display: none;
+}
+
+header .aside {
+    padding: 0;
+}
+
 header .cont {
     position: absolute;
     width: 100%;
@@ -131,6 +141,7 @@ header .cont {
     align-items: baseline;
     justify-content: space-around;
     padding-left: 0;
+    margin-top: 1.5rem;
 }
 
 .block_1 nav ul li {
@@ -144,6 +155,10 @@ header .cont {
 
 .block_1 nav ul li.active {
     border-bottom: 1px solid rgb(0,129,57);
+}
+
+.block_1 .menu {
+    display: none;
 }
 
 .block_1 nav .info_block {
@@ -795,6 +810,30 @@ header .cont {
 }
 
 @media (max-width: 480px){
+    .block_1 .menu {
+        display: inline-flex;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: 'Roboto';
+        line-height: 15px;
+        align-items: center;
+        border: 1px solid rgb(0,129,57);
+        border-radius: 3px;
+        padding: 6px 10px 8px 10px;
+    }
+
+    .block_1 .menu .button_block {
+        margin-right: 5px;
+    }
+
+    .block_1 .menu .button_block div {
+        height: 2px;
+        width: 10px;
+        background-color: rgb(0,129,57);
+        margin-bottom: 2px;
+    }
+
     .block_1 {
         margin-left: 0;
     }
@@ -806,6 +845,7 @@ header .cont {
 
     .block_1 nav ul {
         display: none;
+        margin-top: 0;
     }
 
     .block_1 nav ul li{
@@ -897,6 +937,57 @@ header .cont {
         position: absolute;
         right: 10px;
         top: 2px;
+    }
+
+    header .aside_block.active {
+        display: flex;
+        width: 100%;
+    }
+    
+    header .aside.active {
+        position: relative;
+        left: 0;
+        height: 100vh;
+        width: 48%;
+        background-color: rgba(13,13,13,0.9);
+        z-index: 100;
+        border-right: 5px solid rgb(0,129,57);
+        padding: 16px;
+    }
+    
+    header .aside img {
+        position: absolute;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    header .aside img:active  .aside {
+        width: 0%;
+        display: none;
+    }
+    
+    header .aside ul {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    
+    header .aside ul li:first-child {
+        text-decoration: underline;
+    }
+    
+    header .aside .text {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+    }
+    
+    header .close_block {
+        width: 52%;
+        height: 100vh;
     }
 
     .block_4 {

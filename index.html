@@ -16,6 +16,18 @@
         <img src="./static/img/block1/background1.svg" alt="" class="background1">
         <img src="./static/img/block1/ground.svg" alt="" class="ground">
         <img src="./static/img/block1/seagulls.svg" alt="" class="seagulls">
+        <div class="aside_block">
+            <div class="aside">
+                <img src="./static/img/block1/x.svg" alt="" onclick="toggleAside()">
+                <ul class="text">
+                    <li>О нас</li>
+                    <li>Услуги и цены</li>
+                    <li>Фотоальбом</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="close_block"></div>
+        </div>
         <div class="cont row">
             <div class="col-md-2"></div>
             <div class="block_1 col-md-8">
@@ -27,12 +39,21 @@
                     </div>
                     <div class="col-xxl-5 col-md-6 col-5">
 
-                        <ul class="d-flex mb-0 mt-4">
+                        <ul class="d-flex mb-0">
                             <li class="active">О нас</li>
                             <li>Услуги и цены</li>
                             <li>Фотоальбом</li>
                             <li>Контакты</li>
                         </ul>
+
+                        <div class="menu" onclick="toggleAside()">
+                            <div class="button_block">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            Меню
+                        </div>
 
                     </div>
 
@@ -67,7 +88,7 @@
             <div class="col-md-2"></div>
         </div>
     </header>
-    <main>
+    <!-- <main>
         <div class="block_2">
             <h2>
                 О нашем клубе
@@ -412,7 +433,7 @@
             </div>
         </div>
         <div class="block_8"></div>
-    </main>
+    </main> -->
     <footer>
         <div class="block_9"></div>
         <div class="block_10"></div>

@@ -45,3 +45,10 @@ paginationItems.forEach((item, index) => {
 
 // Инициализация пагинации
 updatePagination();
+
+function toggleAside() {
+    const aside_block = document.querySelector('.aside_block');
+    const aside = document.querySelector('.aside');
+    aside_block.classList.toggle('active'); 
+    aside.classList.toggle('active'); 
+}
