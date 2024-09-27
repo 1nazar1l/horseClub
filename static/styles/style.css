@@ -654,6 +654,10 @@ header .cont {
     align-items: center;
 }
 
+.invalid {
+    border: 1px solid rgb(255,92,0); 
+}
+
 @media (max-width: 1500px){
     .block_1 nav ul li {
         font-weight: 400;
@@ -1049,6 +1053,7 @@ header .cont {
 
     .block_6 {
         margin-bottom: 10px;
+        margin-top: 140px;
     }
 
     .block_6 .title {
@@ -1244,6 +1249,7 @@ header .cont {
         justify-content: center;
         cursor: pointer;
     }
+
     
 }
 
@@ -1546,4 +1552,497 @@ header .cont {
 
 .visit_img:hover::after {
     opacity: 100%;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.block_8 {
+    min-height: 350px;
+}
+.block_8 .title {
+    text-align: center;
+}
+.block_8 .reviews{
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+.block_8 .reviews .review_1{
+    -webkit-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    -moz-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-width: 500px;
+    min-height: 200px;
+    border: 1px solid gray;
+}
+.block_8 .reviews .review_1 .name{
+    margin-top: 80px;
+    max-width: 400px;
+    height: 75px;
+    display: flex;
+}
+.block_8 .reviews .review_1 .name p{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+.block_8 .reviews .review_1 .name .Instagram{
+    position: relative;
+    left: 50px;
+}
+.block_8 .reviews .review_1 .name .VK{
+    position: relative;
+    left: 60px;
+}
+.block_8 .reviews .review_1 .name .quote{
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+.block_8 .reviews .review_2{
+    -webkit-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    -moz-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    max-width: 500px;
+    min-height: 200px;
+    border: 1px solid gray;
+}
+.block_8 .reviews .review_2 .name{
+    margin-top: 80px;
+    max-width: 400px;
+    height: 75px;
+    display: flex;
+}
+.block_8 .reviews .review_2 .name p{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+.block_8 .reviews .review_2 .name .Instagram{
+    position: relative;
+    left: 50px;
+}
+.block_8 .reviews .review_2 .name .VK{
+    position: relative;
+    left: 60px;
+}
+.block_8 .reviews .review_2 .name .quote{
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+.block_8 .reviews .review_3{
+    -webkit-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    -moz-box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    box-shadow: 8px 17px 8px -1px rgba(34, 60, 80, 0.11);
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    max-width: 500px;
+    min-height: 200px;
+    border: 1px solid gray;
+}
+.block_8 .reviews .review_3 .name{
+    margin-top: 80px;
+    max-width: 400px;
+    height: 75px;
+    display: flex;
+}
+.block_8 .reviews .review_3 .name p{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+.block_8 .reviews .review_3 .name .Instagram{
+    position: relative;
+    left: 50px;
+}
+.block_8 .reviews .review_3 .name .VK{
+    position: relative;
+    left: 60px;
+}
+.block_8 .reviews .review_3 .name .quote{
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+
+
+.block_9 {
+    margin-top: 50px;
+    width: 100%;
+    max-height: 840px;
+    top: 7509px;
+    left: 192px;
+    gap: 0px;
+    opacity: 0px;   
+    border: 1px solid #EAEAEA;
+    background-image: url("../img/block_9/bg.png");
+    background-size: 130%;
+    color: #008139;
+    display: flex;
+}
+.block_9 .rectangl {
+    max-width: 521px;
+    height: 511px;
+    top: 7579px;
+    left: 375px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+.block_9 .rectangl .text_adres {
+    padding-left: 40px;
+    background-image: url("../img/block_9/pin.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block_9 .rectangl .text_phone {
+    padding-left: 40px;
+    background-image: url("../img/block_9/phone.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block_9 .rectangl .text_mail {
+    padding-left: 40px;
+    background-image: url("../img/block_9/mail.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block_9 .rectangl .text_clock {
+    padding-left: 40px;
+    background-image: url("../img/block_9/clock.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.block_9 .rectangl h2 {
+    width: 174px;
+    height: 36px;
+    top: 7629px;
+    left: 445px;
+    gap: 0px;
+    opacity: 0px;
+}
+.block_9 .rectangl .dash {
+    width: 26px;
+    height: 1px;
+    top: 7695px;
+    left: 445px;
+    gap: 0px;
+    opacity: 0px;
+    background: #008139;
+}
+.block_9 .rectangl .icons {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 230px;
+}
+.block_9 .rectangl .Instagram {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+.block_9 .rectangl .YouTube {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+.block_9 .rectangl .WhatsApp {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+.block_9 .rectangl .VK {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+
+.block_9 .rectangl .Instagram:hover img {
+    opacity: 0;
+}
+.block_9 .rectangl .Instagram:hover {
+    background: url("../img/block_9/Instagram_hover.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+.block_9 .rectangl .YouTube:hover img {
+    opacity: 0;
+}
+.block_9 .rectangl .YouTube:hover {
+    background: url("../img/block_9/YouTube_hover.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+.block_9 .rectangl .WhatsApp:hover img{
+    opacity: 0;
+}
+.block_9 .rectangl .WhatsApp:hover {
+    background: url("../img/block_9/WhatsApp_hover.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+.block_9 .rectangl .VK:hover img {
+    opacity: 0;
+}
+.block_9 .rectangl .VK:hover {
+    background: url("../img/block_9/VK_hover.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.block_9 .pin_on_map {
+    position: relative;
+    top: 420px;
+    left: 670px;
+    object-fit: cover;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+.block_9 .bush_1 {
+    position: relative;
+    right: 1150px;
+    top: 540px;
+    object-fit: cover;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.block_9 .bush_2 {
+    position: relative;
+    top: 170px;
+    left: 180px;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+.block_10 {
+    position: relative;
+    background-color: black;
+    width: 2000px;
+    height: 138px;
+    right: 80px;
+    display: flex;
+}
+.block_10 .logo {
+    position: relative;
+    left: 500px;
+    padding-top: 10px;
+}
+.block_10 .menu {
+    position: relative;
+    top: 35px;
+    left: 700px;
+    height: 50px;
+}
+.block_10 .button_block_10 {
+    position: relative;
+    top: 20px;
+    left: 750px;
+}
+.block_10 .politics {
+    position: relative;
+    display: flex;
+    color: #7D808A;
+    top: 70px;
+    right: 270px;
+    white-space: nowrap;
+    height: 50px;
+}
+.block_10 p {
+    padding-left: 50px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .block_8 .reviews .quote {
+        display: none;
+    }
+    .block_8 .reviews {
+        flex-wrap: wrap;
+    }
+    .block_8 .reviews .review_3 {
+        margin-right: 0px;
+    }
+    .block_8 .reviews .review_2 {
+        max-width: 300px;
+    }
+    .block_8 .reviews .review_1 {
+        max-width: 300px;
+    }
+    .block_9 {
+        background-size: 210%;
+    }
+    .block_9 .bush_1 {
+        display: none;
+    }
+    .block_9 .bush_2 {
+        display: none;
+    }
+    .block_9 .rectangl {
+        margin-left: 270px;
+    }
+    .block_10 {
+        right: 430px;
+    }
+    .block_10 .menu {
+        left: 600px;
+    }
+    .block_10 .button_block_10 {
+        left: 650px;
+    }
+}
+@media (max-width: 768px) {
+    .block_8 .reviews .review_2 {
+        max-width: 500px;
+    }
+    .block_8 .reviews .review_1 {
+        max-width: 500px;
+    } 
+    .block_8 .reviews  {
+        margin-right: 50px;
+    }
+    .block_9 {
+        background-size: 230%;
+    }
+    .block_9 .rectangl {
+        margin-left: 200px;
+        max-height: 400px;
+        width: 600px;
+    }
+    .block_9 .rectangl .icons{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .block_10 {
+        flex-wrap: wrap;
+        width: 800px;
+        left: 0px;
+        height: 250px;
+    }
+    .block_10 .logo {
+        left: 50px;
+    }
+    .block_10 .menu {
+        left: 150px;
+    }
+    .block_10 .button_block_10 {
+        left: -260px;
+        right: 300px;
+        top: 80px;
+    }
+    .block_10 .politics {
+        top: 0px;
+        left: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .block_9 {
+        justify-content: center;
+    }
+    .block_9 .rectangl {
+        padding: 10px;
+        width: 300px;
+        left: 0;
+        margin-right: 200px;
+        max-width: 480px;
+        max-height: 380px;
+    }
+    .block_9 .rectangl .icons{
+        margin-top: 10px;
+        margin-left: 0;
+        right: 300px;
+    }
+    .block_10 {
+        flex-wrap: wrap;
+        width: 600px;
+        right: 120px;
+        height: 300px;
+    }
+    .block_10 .logo {
+        left: 30px;
+    }
+    .block_10 .menu {
+        top: 80px;
+        left: -100px;
+    }
+    .block_10 .button_block_10 {
+        left: 130px;
+        right: 200px;
+        top: 10px;
+    }
+    .block_10 .politics {
+        left: 50px;
+        top: -30px;
+        flex-wrap: wrap;
+    }
 }

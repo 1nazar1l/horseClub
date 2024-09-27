@@ -52,3 +52,34 @@ function toggleAside() {
     aside_block.classList.toggle('active'); 
     aside.classList.toggle('active'); 
 }
+
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+
+// Проверка для первого инпута (только буквы)
+input1.addEventListener('input', function() {
+    const value = input1.value;
+    const isValid = /^[a-zA-Zа-яА-ЯёЁ]+$/.test(value); // Проверка на только буквы
+
+    if (isValid) {
+        input1.classList.remove('invalid');
+        input1.classList.add('valid');
+    } else {
+        input1.classList.remove('valid');
+        input1.classList.add('invalid');
+    }
+});
+
+// Проверка для второго инпута (только цифры)
+input2.addEventListener('input', function() {
+    const value = input2.value;
+    const isValid = /^\d+$/.test(value); // Проверка на только цифры
+
+    if (isValid) {
+        input2.classList.remove('invalid');
+        input2.classList.add('valid');
+    } else {
+        input2.classList.remove('valid');
+        input2.classList.add('invalid');
+    }
+});
